@@ -11,6 +11,7 @@ As explained earlier DI is Dependency Inversion Principle which states that "Hig
 # How is dagger implemented?
 It will be better explained by giving the sample example.
 Project is using dagger2 for creating dependency injector. Whole idea is to use <b>MessengerModule</b> as a dependency for the application.
+
 1. App uses the ApplicationModule which in turn uses the <b>MessengerModule</b> by passing the context to it.
 2. MessengerComponent is an interface between "Activity" & "Module"
 3. Activity will use MessengerModule injected by Dagger to display message to user. In similar way we can add different techniques to display messages to user inside MessengerModule.
